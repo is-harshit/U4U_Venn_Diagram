@@ -1,0 +1,13 @@
+/* VennDiagram.css */
+
+.venn-circle {
+  fill-opacity: 0.5;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+.venn-label {
+  fill: white;
+  font-size: 12px;
+  text-anchor: middle;
+}

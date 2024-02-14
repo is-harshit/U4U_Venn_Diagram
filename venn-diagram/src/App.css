@@ -1,0 +1,73 @@
+/* App.css or your custom CSS file */
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f9e7e7;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2 {
+  color: #ff3385;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ff66b2;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff3385;
+}
+
+/* Style for the Venn diagram */
+.venn-diagram {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.Player1 {
+  background-color: #3498db;
+}
+
+.Player2 {
+  background-color: #e74c3c;
+}
+
+.Common {
+  background-color: #f39c12;
+}
+
+.player-names label,
+.player-names input {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.player-names input {
+  padding: 8px;
+  margin: 0 auto;
+  display: block;
+  background-color: #ffcccc; /* Light pink input background */
+  color: #050303;
+}
