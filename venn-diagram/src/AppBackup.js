@@ -4,6 +4,7 @@ import VennDiagram from "./VennDiagram";
 import io from "socket.io-client";
 import "./App.css";
 import questions from "./questions";
+
 const socket = io.connect("http://localhost:3001");
 
 const App = () => {
@@ -37,11 +38,6 @@ const App = () => {
   const currentQuestion = questions[currentQuestionIndex];
   // const player1Name = "abc";
   // const player2Name = "def";
-
-  React.useEffect(() => {
-    document.title = "U4U Venn Diagram Game";
-  }, []);
-
   const JoinGame = () => {
     setPlayerWaiting(true);
     console.log("Sets", sets);
@@ -196,9 +192,7 @@ const App = () => {
   ];
 
   return (
-    <div className="App">
-      {/* <img src={"./logo.svg"} className="App-logo" alt="custom logo" /> */}
-
+    <div>
       <h1>U4U Venn Diagram Quiz</h1>
       {!namesSubmitted && (
         <div className="player-names">

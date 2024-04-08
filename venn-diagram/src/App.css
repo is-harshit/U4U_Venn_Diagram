@@ -1,19 +1,26 @@
 /* App.css or your custom CSS file */
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
-  background-color: #f9e7e7;
+  background-image: url("https://i.pinimg.com/564x/1d/8d/ab/1d8dab6a69c3d4225cb0a3ccd5017711.jpg"); /* Replace 'pink-background.jpg' with your image file */
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 20px;
+  color: #333; /* Set a default text color */
 }
 
 h1 {
-  color: #000000;
+  font-family: "Black Ops One", cursive;
+  color: #ff00bb;
+  font-size: 2.5em;
 }
 
 h2 {
-  color: #ff3385;
+  color: #ff73c2;
+  font-size: 1.8em;
+  font-family: "Black Ops One", cursive;
 }
 
 div {
@@ -21,23 +28,27 @@ div {
 }
 
 button {
-  background-color: #ff66b2;
+  background-color: #f44cb3;
   color: white;
   padding: 10px 15px;
   margin: 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button:hover {
-  background-color: #ff3385;
+  background-color: #ff00bb; /* Slightly darker shade on hover */
 }
 
 /* Style for the Venn diagram */
 .venn-diagram {
   display: flex;
   justify-content: center;
+  color: #f0007c;
 }
 
 .circle {
@@ -46,15 +57,18 @@ button:hover {
 }
 
 .Player1 {
-  background-color: #3498db;
+  background-color: #ff0bff;
+  color: #ff73c2;
+  font-family: "Black Ops One", cursive;
 }
 
 .Player2 {
-  background-color: #e74c3c;
+  background-color: #ff6dd6;
+  font-family: "Poppins", sans-serif;
 }
 
 .Common {
-  background-color: #f39c12;
+  background-color: #ff73c2;
 }
 
 .player-names label,
@@ -62,12 +76,59 @@ button:hover {
   display: block;
   margin-bottom: 10px;
   text-align: center;
+  color: #f0007c; /* Font color for labels */
+  font-family: "Black Ops One", cursive;
 }
 
 .player-names input {
   padding: 8px;
   margin: 0 auto;
   display: block;
-  background-color: #ffcccc; /* Light pink input background */
-  color: #050303;
+  background-color: #ffb9f4; /* Light pink input background */
+  color: #ff0000;
+  border: 1px solid #ff73c2; /* Add a border for better visibility */
+  border-radius: 5px;
+}
+.logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  max-width: 200px; /* Set the maximum width for the logo */
+  max-height: 200px; /* Set the maximum height for the logo */
+  z-index: 999;
+}
+.p {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 1000;
+}
+/* App.css */
+
+/* Style for the selected option */
+button.selected {
+  background-color: lightblue; /* Change this to the desired highlight color */
+  /* Add any other styling you want for the selected button */
+}
+
+/* Hover style for all options */
+button:hover {
+  background-color: lightblue; /* Change this to the desired highlight color */
+  /* Add any other hover styling you want for all options */
+}
+
+.Result p {
+  color: #da1dc7;
+  font-size: 1.8em;
+  font-family: "Black Ops One", cursive;
+}
+
+.answers p {
+  color: #da1dc7;
+  font-size: 1.3em;
+  font-family: "Black Ops One", cursive;
+}
+
+.OptionSelection p {
+  color: #760a6b;
+  font-size: 1.3em;
+  font-family: "Black Ops One", cursive;
 }
