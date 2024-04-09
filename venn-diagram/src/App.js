@@ -4,8 +4,8 @@ import VennDiagram from "./VennDiagram";
 import io from "socket.io-client";
 import "./App.css";
 import questions from "./questions";
-// const SERVER_PATH = "https://u4u-venn-diagram-backend.vercel.app/";
-// const socket = io.connect([SERVER_PATH]);
+// const SERVER_PATH = "http://127.0.0.1:4040 ";
+// const socket = io.connect(SERVER_PATH);
 const socket = io.connect("http://localhost:3001");
 
 const App = () => {
